@@ -72,12 +72,11 @@ class TweetsController < ApplicationController
           else
             redirect "/tweets/#{@tweet.id}/edit"
           end
-
         end
+      end
       else
         redirect '/login'
       end
-    end
   end
 
   delete '/tweets/:id' do
