@@ -59,7 +59,7 @@ class TweetsController < ApplicationController
 
   patch '/tweets/:id' do
 
-    binding.pry
+    #binding.pry
     if logged_in?
       if params[:tweet]["content"] == ""
         redirect "/tweets/#{params[:id]}/edit"
